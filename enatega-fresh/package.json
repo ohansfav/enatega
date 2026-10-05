@@ -1,0 +1,25 @@
+{
+  "name": "enatega-fresh",
+  "version": "1.0.0",
+  "description": "Enatega - Food Delivery Multivendor Platform (Fresh Build)",
+  "private": true,
+  "workspaces": [
+    "packages/common",
+    "apps/customer-web",
+    "apps/admin-web"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w packages/common && npm run dev -w apps/customer-web & npm run dev -w apps/admin-web",
+    "build": "npm run build -w packages/common && npm run build -w apps/customer-web && npm run build -w apps/admin-web",
+    "install-all": "npm install && npm install -w packages/common && npm install -w apps/customer-web && npm install -w apps/admin-web"
+  },
+  "keywords": [
+    "food-delivery",
+    "multivendor",
+    "restaurant",
+    "enatega"
+  ],
+  "devDependencies": {
+    "terser": "^5.46.1"
+  }
+}

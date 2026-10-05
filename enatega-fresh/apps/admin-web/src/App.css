@@ -1,0 +1,44 @@
+/* Admin Dashboard Styles */
+.sidebar {
+  background: #1f2937;
+  width: 256px;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+  background: #f3f4f6;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th {
+  padding: 12px 24px;
+  text-align: left;
+  background: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+table td {
+  padding: 12px 24px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+table tbody tr:hover {
+  background: #f9fafb;
+}
